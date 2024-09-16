@@ -1,5 +1,6 @@
 package einstein.com.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -17,6 +18,7 @@ public class PostEntity {
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "user_id") // Nome da coluna deve corresponder ao da tabela
+    @JsonIgnore
     private UserEntity user;
 
     @Column(name = "data")

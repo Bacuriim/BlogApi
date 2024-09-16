@@ -11,7 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value="/blog")
-@Api(value ="API REST Blog")
+@Api(value ="API REST Blog Users")
 @CrossOrigin(origins="*")
 public class UserController {
 

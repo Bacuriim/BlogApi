@@ -19,4 +19,9 @@ public class UserService {
         UserEntity user = userRepository.findUserByName(name);
         return user.getEmail();
     }
+
+    public Long findUserById(Long id) {
+        UserEntity user = userRepository.findUserById(id);
+        return user.getId();
+    }
 }
